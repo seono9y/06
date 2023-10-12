@@ -7,41 +7,16 @@
 
 #include <stdio.h>
 
-
-
-int sumTwo(int a, int b) {
-    int c = a + b;
-    return c;
-}
-
-int square(int n)
+void square(int a)
 {
-    return n*n;
+    a=a*a;
 }
 
-int get_max(int x, int y)
+int main()
 {
-    if (x>y)
-        return x;
-        
-    return y;
+    int a=2;
+    square(a);
+    printf("a=%i\n", a);
 }
 
-int main(void)
-{
-    int a,b;
-    int n;
-    int x,y;
-    
-    a = 3;
-    b = 10;
-    printf("sumTwo result : %i\n", sumTwo(a,b));
-    
-    n = 4;
-    printf("square result : %i\n", square(n));
-    
-    x = 7;
-    y = 12;
-    printf("get_max result : %i\n", get_max(x, y));
-}
 
